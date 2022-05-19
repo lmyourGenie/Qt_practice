@@ -1,6 +1,7 @@
 #include <QDebug>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <QString>
 #include <iostream>
 
 int main(int argc, char* argv[]) {
@@ -25,6 +26,9 @@ int main(int argc, char* argv[]) {
     qDebug() << "2";
     engine.load(url);
     qDebug() << "4";
+
+    QString name = "name";
+    qDebug() << "my name is : " << name;
     // 1234
 
     return app.exec();
