@@ -7,7 +7,7 @@ Rectangle {
 
     onClicked: {
         root.width = root.width / 2
-        console.log("@daum")
+        console.log("@daum.net")
     }
 
     onWidthChanged: {
