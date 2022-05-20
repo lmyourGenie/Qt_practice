@@ -1,7 +1,9 @@
 <RCC>
-    <qresource prefix="/">
-        <file>main.qml</file>
+    <qresource prefix="/asw">
+        <file alias="main.qml">test/main.qml</file>
+<!--        <file>test/main.qml</file>-->
         <file>Button.qml</file>
         <file>MyCustom.qml</file>
+        <file>MyLabel.qml</file>
     </qresource>
 </RCC>
