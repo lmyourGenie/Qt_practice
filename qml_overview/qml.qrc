@@ -6,5 +6,6 @@
         <file>MyLabel.qml</file>
         <file>AnchorsExample.qml</file>
         <file>MyButton.qml</file>
+        <file>AnchorsExample2.qml</file>
     </qresource>
 </RCC>
