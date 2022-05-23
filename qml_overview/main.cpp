@@ -31,16 +31,16 @@ int main(int argc, char* argv[]) {
     qDebug() << "2";
     //    engine.load(url);
     //    engine.load(url2);
-    engine.load(url3);
-    //    engine.load(url4);
+    //    engine.load(url3);
+    engine.load(url4);
     //    engine.load(url5);
     qDebug() << "4";
     QFontDatabase database;
 
     const QStringList fontFamilies = database.families();
-    for (const QString& family : fontFamilies) {
-        //        qDebug() << family;
-    }
+    //    for (const QString& family : fontFamilies) {
+    //                qDebug() << family;
+    //    }
 
     QString name = "name";
     qDebug() << "my name is : " << name;

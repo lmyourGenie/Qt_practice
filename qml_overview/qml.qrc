@@ -7,5 +7,7 @@
         <file>AnchorsExample.qml</file>
         <file>MyButton.qml</file>
         <file>AnchorsExample2.qml</file>
+        <file>FontfamilyExample.qml</file>
+        <file>FontCheck.qml</file>
     </qresource>
 </RCC>

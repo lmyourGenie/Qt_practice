@@ -13,7 +13,6 @@ ApplicationWindow {
         anchors.left: rect.left
         anchors.baseline: rect.bottom
         anchors.baselineOffset: -10
-
     }
     Rectangle {
         id: rect
@@ -24,7 +23,6 @@ ApplicationWindow {
         color: "red"
         opacity: 0.3
     }
-
     Rectangle {
         width: 100
         height: 100
@@ -54,5 +52,56 @@ ApplicationWindow {
                 }
             }
         }
+    }
+
+    FontfamilyExample {
+        id: testFont
+        Column {
+            Repeater {
+                model: {
+                    console.log("model value:", testFont.listSize)
+                    testFont.templist.length
+                    testFont.listSize
+                }
+                Text {
+                    id: name
+                    font.family: testFont.templist[index]
+                    text: "abcdefg [" + testFont.templist[index] + "]"
+                    Component.onCompleted: {
+                        console.log("index : " , index)
+                        console.log("text : " , text)
+/*
+    <<<<log>>>>
+    qml: model value: undefined
+    qml: Component.onComleted START
+    qml: templist size:  3
+    qml: list cleared!
+    qml: model value: 38
+    qml: templist size:  38
+    qml: Component.onComleted END
+*/
+                    }
+                }
+            }
+        }
+    }
+
+
+    Text {
+        font.family: "Suruma"
+        text: "abcdef. Suruma"
+        color: "red"
+    }
+    Text {
+        font.family: "Ubuntu"
+        y: 30
+        text: "abcdef. Ubuntu"
+        color: "blue"
+    }
+    Text {
+        font.family: "Serif"
+        y: 60
+        text: "abcdef. Serif"
+        color: "green"
     }
 }
