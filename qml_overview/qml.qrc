@@ -9,5 +9,10 @@
         <file>AnchorsExample2.qml</file>
         <file>FontfamilyExample.qml</file>
         <file>FontCheck.qml</file>
+        <file>ImageExample.qml</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>dog</file>
+        <file>4k.jpg</file>
     </qresource>
 </RCC>
