@@ -2,3 +2,6 @@
 ./main.o
 ./qrc_qml.o
 ./qml_overview.pro.user
+.qmake.stash
+.qtc_clangd/
+
