@@ -12,13 +12,9 @@
         <file>FontCheck.qml</file>
         <file>ImageExample.qml</file>
         <file>ClickableImage.qml</file>
-        <file>SimpleAnimation.qml</file>
-        <file>ParallelAnimationPractice.qml</file>
-        <file>SequenceAnimationPractice.qml</file>
     </qresource>
     <qresource prefix="/">
         <file>dog</file>
-        <file>4k.jpg</file>
         <file>ghost.png</file>
         <file>lemon.png</file>
         <file>orange.png</file>
@@ -26,6 +22,9 @@
         <file>soccer_ball.png</file>
     </qresource>
     <qresource prefix="/anim">
+        <file>SimpleAnimation.qml</file>
+        <file>ParallelAnimationPractice.qml</file>
+        <file>SequenceAnimationPractice.qml</file>
         <file>EasingCurves.qml</file>
     </qresource>
 </RCC>
