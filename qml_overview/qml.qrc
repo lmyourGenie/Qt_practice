@@ -13,6 +13,7 @@
         <file>ImageExample.qml</file>
         <file>ClickableImage.qml</file>
         <file>SimpleAnimation.qml</file>
+        <file>ParallelAnimationPractice.qml</file>
     </qresource>
     <qresource prefix="/">
         <file>dog</file>

@@ -6,5 +6,6 @@ ApplicationWindow {
     width: 600
     height: 600
 
-    SimpleAnimation {}
+    //    SimpleAnimation {}
+    ParallelAnimationPractice {}
 }
