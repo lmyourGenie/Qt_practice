@@ -9,7 +9,6 @@ Text {
     property Text someText4
 //    property Component someText4
 
-
     text: "Hello, " + someText4.text
 
     Component.onCompleted: {

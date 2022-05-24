@@ -4,4 +4,4 @@
 ./qml_overview.pro.user
 .qmake.stash
 .qtc_clangd/
-
+./qrc_qml.cpp
