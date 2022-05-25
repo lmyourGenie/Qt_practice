@@ -1,11 +1,14 @@
 import QtQuick 2.5
 import QtQuick.Controls 2.13
-import "../anim"
+import "qrc:/anim"
 
 ApplicationWindow {
     visible: true
-    width: 480
-    height: 300
+    width: 320
+    height: 480
 
-    SequenceAnimationPractice {}
+//    SimpleAnimation {}
+//    SequenceAnimationPractice {}
+//    PropertyAnimationPractice {}
+    EasingCurves {}
 }
