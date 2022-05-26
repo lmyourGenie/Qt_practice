@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>TrafficCircleLight.qml</file>
         <file>TrafficLight.qml</file>
+        <file>TrafficTransition.qml</file>
     </qresource>
 </RCC>

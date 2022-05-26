@@ -4,9 +4,10 @@ import QtQuick.Window 2.15
 Window {
     id: myWindow
     width: 160
-    height: 280
+    height: 300
     visible: true
     title: qsTr("Traffic Light")
 
-    TrafficLight {}
+//    TrafficLight {}
+    TrafficTransition {}
 }
