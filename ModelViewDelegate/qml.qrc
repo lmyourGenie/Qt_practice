@@ -5,5 +5,10 @@
         <file>BasicModel.qml</file>
         <file>BasicModelWithText.qml</file>
         <file>PlanetModel.qml</file>
+        <file>DynamicModel.qml</file>
+        <file>HighlightModel.qml</file>
+        <file>YellowBox.qml</file>
+        <file>HideWhatYouSelect.qml</file>
+        <file>AddRemoveAnimation.qml</file>
     </qresource>
 </RCC>
