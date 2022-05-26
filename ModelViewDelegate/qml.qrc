@@ -10,5 +10,16 @@
         <file>YellowBox.qml</file>
         <file>HideWhatYouSelect.qml</file>
         <file>AddRemoveAnimation.qml</file>
+        <file>DogBreeds.qml</file>
+        <file>dogimage/shiba.jpeg</file>
+        <file>dogimage/pome.jpeg</file>
+        <file>dogimage/jindo.jpeg</file>
+        <file>dogimage/huskey.jpeg</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="huskey.jpeg">dogimage/huskey.jpeg</file>
+        <file alias="jindo.jpeg">dogimage/jindo.jpeg</file>
+        <file alias="pome.jpeg">dogimage/pome.jpeg</file>
+        <file alias="shiba.jpeg">dogimage/shiba.jpeg</file>
     </qresource>
 </RCC>

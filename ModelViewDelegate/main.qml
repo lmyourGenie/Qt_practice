@@ -1,10 +1,10 @@
 import QtQuick
 
 Window {
-    width: 480
-    height: 300
+    width: 300
+    height: 480
     visible: true
     title: qsTr("MVD Practice")
 
-    AddRemoveAnimation {}
+    DogBreeds {}
 }
