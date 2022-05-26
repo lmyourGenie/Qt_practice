@@ -7,5 +7,6 @@ Window {
     title: qsTr("MVD Practice")
 
 //    BasicModel {}
-    BasicModelWithText {}
+//    BasicModelWithText {}
+    PlanetModel {}
 }

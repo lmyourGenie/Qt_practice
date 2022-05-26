@@ -4,5 +4,6 @@
         <file>BlueBox.qml</file>
         <file>BasicModel.qml</file>
         <file>BasicModelWithText.qml</file>
+        <file>PlanetModel.qml</file>
     </qresource>
 </RCC>
