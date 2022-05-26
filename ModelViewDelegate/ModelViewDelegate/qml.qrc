@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>BlueBox.qml</file>
+        <file>BasicModel.qml</file>
+        <file>BasicModelWithText.qml</file>
+    </qresource>
+</RCC>
