@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MyText.qml</file>
+        <file>MyRectangle.qml</file>
+        <file>MyLoader.qml</file>
+        <file>dog</file>
+    </qresource>
+</RCC>
