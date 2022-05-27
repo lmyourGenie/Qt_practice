@@ -8,7 +8,33 @@ Item {
         id: dialLoader
 
         anchors.fill: parent
-        source: "qrc:/MyText.qml"
-        // source: "qrc:/MyRectangle.qml"
+    }
+
+    Rectangle {
+        anchors.bottom: parent.bottom
+        width: 100
+        height: 100
+        color: "yellow"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                dialLoader.source = "qrc:/MyText.qml"
+            }
+        }
+    }
+    Rectangle {
+        x: 100
+        anchors.bottom: parent.bottom
+        width: 100
+        height: 100
+        color: "blue"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                dialLoader.source = "qrc:/MyRectangle.qml"
+            }
+        }
     }
 }
