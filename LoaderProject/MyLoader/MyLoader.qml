@@ -5,33 +5,90 @@ Item {
     height: 480
 
     Loader {
-        id: dialLoad
+        id: dialLoader
+        anchors.top: parent.top
 
-        asynchronous: true
-        onStatusChanged: {
-            if (status === Loader.Null) {
-                console.log("Loader.Null - 로더가 비활성화되었거나 QML 소스가 설정되지 않았습니다.")
-            } else if(status === Loader.Ready) {
-                console.log("Loader.Ready - QML 소스가 로드되었습니다.")
-            } else if(status === Loader.Loading) {
-                console.log("Loader.Loading - QML 소스가 현재 로드 중입니다.")
-            } else if(status === Loader.Error) {
-                console.log("Loader.Error - QML 소스를 로드하는 동안 오류가 발생했습니다.")
-            }
-
+//        active: false
+        onLoaded: {
+            binder.target = dialLoader.item;
         }
+        onSourceChanged: {
+            console.log("Source:", source)
+        }
+
+        states: [
+            State {
+                name: "text"
+                PropertyChanges { target: dialLoader; source: "MyText.qml"; }
+            },
+            State {
+                name: "rectangle"
+                PropertyChanges { target: dialLoader; source: "MyRectangle.qml"; }
+            }
+        ]
     }
+
+    Binding {
+        id: binder
+
+        property: "print_janguh"
+        value: "pink"
+    }
+
     Rectangle {
-        y: 300
         width: 100
         height: 100
+        y: 300
         color: "red"
+
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
 
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                dialLoad.source = "MyText.qml"
-//                dialLoad.sourceComponent = undefined
+                dialLoader.state = "text"
+            }
+        }
+    }
+
+    Rectangle {
+        x: 100
+        y: 300
+        width: 100
+        height: 100
+        color: "blue"
+
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                dialLoader.state = "rectangle"
+            }
+        }
+    }
+
+    Rectangle {
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+        color: "yellow"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                console.log("Yellow Clicked")
+
+                if (dialLoader.active === true) {
+                    dialLoader.active = false
+                    console.log("false")
+                } else {
+                    dialLoader.active = true
+                    console.log("true")
+                }
             }
         }
     }
