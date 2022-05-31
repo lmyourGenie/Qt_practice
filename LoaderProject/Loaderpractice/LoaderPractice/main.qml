@@ -9,12 +9,20 @@ Window {
 
     property bool isRunning: true
 
-    // test2
+    // test 3
     MyAnimation {
         id: myAni
+    }
 
-        // (2) 다른 qml파일에서 선언한 signal에 대한 slot 생성
-        onStartclicked: { console.log("onStartclicked")}
-        onStopclicked: { console.log("onStopclicked") }
+    // (3) Connections 를 이용해서 Slot 생성
+    Connections {
+        target: myAni
+        function onStartclicked() {
+            console.log("connection main.qml: onStartclicked")
+        }
+
+        function onStopclicked() {
+            console.log("connection main.qml: onStopclicked")
+        }
     }
 }
