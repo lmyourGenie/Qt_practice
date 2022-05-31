@@ -9,14 +9,20 @@ Window {
 
     property bool isRunning: true
 
-    // test 3
-    MyAnimation {
-        id: myAni
+    // test 4
+    // (4) Loader와 Connections를 사용
+    Loader {
+        id: dialoader
+        source: "qrc:/MyAnimation.qml"
+        onLoaded: {
+            bind.target = dialoader.item
+        }
     }
-
-    // (3) Connections 를 이용해서 Slot 생성
     Connections {
-        target: myAni
+        id: bind
+        target: dialoader.item
+        // 시그널을 보내는 객체. 설정 안하면 default는 '부모'
+
         function onStartclicked() {
             console.log("connection main.qml: onStartclicked")
         }
