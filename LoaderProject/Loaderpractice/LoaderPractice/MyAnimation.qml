@@ -7,14 +7,6 @@ Item {
     signal startclicked()
     signal stopclicked()
 
-    // (1) signal 선언한 곳에서 slot 생성
-    onStartclicked: {
-        console.log("onStartclicked")
-    }
-    onStopclicked: {
-        console.log("onStopclicked")
-    }
-
     Rectangle {
         id: ball
         x: 150

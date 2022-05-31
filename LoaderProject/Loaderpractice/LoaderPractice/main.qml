@@ -9,8 +9,12 @@ Window {
 
     property bool isRunning: true
 
-    // test 1
+    // test2
     MyAnimation {
-        running: isRunning
+        id: myAni
+
+        // (2) 다른 qml파일에서 선언한 signal에 대한 slot 생성
+        onStartclicked: { console.log("onStartclicked")}
+        onStopclicked: { console.log("onStopclicked") }
     }
 }
