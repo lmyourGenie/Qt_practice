@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MyLoader.qml</file>
+        <file>MyAnimation.qml</file>
+    </qresource>
+</RCC>
